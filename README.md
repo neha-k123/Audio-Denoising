@@ -17,7 +17,8 @@ This repo uses `pywt`. I have a custom implementation of wavelet here [wavelets]
     ```python
     from denoise import AudioDeNoise 
     
-    audioDenoiser = AudioDeNoise(inputFile="input.wav")
+    ##audioDenoiser = AudioDeNoise(inputFile="input.wav")
+    audioDenoiser = AudioDeNoise(inputFile="our_test_audio.wav")
     audioDenoiser.deNoise(outputFile="input_denoised.wav")
     audioDenoiser.generateNoiseProfile(noiseFile="input_noise_profile.wav")
     ```
